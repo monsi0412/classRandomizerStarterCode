@@ -10,14 +10,14 @@ var teachers=[
     "Aaron", "Zack", "Justin", "Alyxe", "Julia"
 ];
 
-var randomStudent=math.floor(math.random()*students.length);
-var randomTeacher=math.floor(math.random()*teachers.length);
+var randomStudent=Math.floor(Math.random()*students.length);
+var randomTeacher=Math.floor(Math.random()*teachers.length);
 
 $("#studentButton").click(function(){
-    ("#studentDisplay").append(students[randomStudent]);
+    $("#studentDisplay").append(students[randomStudent]);
 });
 $("#teacherButton").click(function(){
-    ("teacherDisplay").append(teachers[randomTeacher]);
+    $("#teacherDisplay").append(teachers[randomTeacher]);
 });
 
 });
