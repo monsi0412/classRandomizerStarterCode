@@ -4,7 +4,7 @@
 $(document).ready(function(){
 
 var students=[
-    "Monserrat", "Leslie", "Adonis" 
+    "Monserrat", "Leslie", "Adonis"
 ];
 var teachers=[
     "Aaron", "Zack", "Justin", "Alyxe", "Julia"
@@ -14,10 +14,11 @@ var randomStudent=Math.floor(Math.random()*students.length);
 var randomTeacher=Math.floor(Math.random()*teachers.length);
 
 $("#studentButton").click(function(){
-    $("#studentDisplay").append(students[randomStudent]);
+    $("#studentDisplay").append("<p>", students[randomStudent], "</p>");
 });
 $("#teacherButton").click(function(){
-    $("#teacherDisplay").append(teachers[randomTeacher]);
+    $("#teacherDisplay").append("<p>", teachers[randomTeacher], "</p>");
 });
+
 
 });
